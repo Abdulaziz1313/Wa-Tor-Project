@@ -1,0 +1,69 @@
+#---------------------------------------------------------
+# Doxyfile for Wa-Tor Simulation (Go)
+#---------------------------------------------------------
+
+# Basic project info
+PROJECT_NAME           = "Wa-Tor Simulation"
+PROJECT_BRIEF          = "Sharks and fish wage an ecological war on the toroidal planet of Wa-Tor (Go implementation)."
+
+# Where to put generated docs (HTML will go in docs/html/)
+OUTPUT_DIRECTORY       = docs
+
+# We only care about HTML output for this project
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+
+# Input settings
+# Use the current directory as root
+INPUT                  = .
+
+# Only look at Go source files
+FILE_PATTERNS          = *.go
+
+# Also look in subdirectories (if you add any later, e.g. /internal or /pkg)
+RECURSIVE              = YES
+
+# Treat code like a C-style language (works fine for Go-style comments)
+OPTIMIZE_OUTPUT_FOR_C  = YES
+
+# Extraction behaviour
+# EXTRACT_ALL = YES means everything is included even if not documented.
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_ANON_NSPACES   = YES
+
+# Don’t spam you for every missing comment
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = NO
+
+# Source code display
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# Paths
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = .
+
+# Comment style helpers
+# This makes Doxygen treat the first sentence as a brief description when using
+# Go-style comments like:
+#   // NewWorld creates a new Wa-Tor world.
+JAVADOC_AUTOBRIEF      = YES
+
+# Dot/Graph options (optional; you can turn off if you don't want graphs)
+HAVE_DOT               = NO
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+DOT_MULTI_TARGETS      = NO
+
+# Misc
+QUIET                  = NO
+WARNINGS               = YES
